@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Recettes Communautaires</title>
+</head>
+
+<body>
+<div class="container-fluid">
+    <h4>Répertoire de recettes communautaires</h4>
+    <div class="row">
+        <div class="ajout">
+            <h3>Ajouter une recette</h3>
+            <!-- Formulaire d'ajout de recette -->
+            <label for="NomRecette" class="form-label">Nom de la recette</label>
+            <input type="text" class="form-control" id="NomRecette" name="NomRecette" required>
+            <div class="Input">
+                <div class="ingredient">
+                    <label class="form-label">Ingrédients</label>
+                    <!-- Ajout des ingrédients -->
+                    <div class="ingredient-inputs">
+                        <input type="text" class="form-control ingredient-input" placeholder="Ingrédient 1" required>
+                        <input type="text" class="form-control ingredient-input" placeholder="Ingrédient 2" required>
+                        <input type="text" class="form-control ingredient-input" placeholder="Ingrédient 3" required>
+                        <input type="text" class="form-control ingredient-input" placeholder="Ingrédient 4" required>
+                        <input type="text" class="form-control ingredient-input" placeholder="Ingrédient 5" required>
+
+                    </div>
+                </div>
+                <div class="quantité">
+                    <!-- Ajout des quantités -->
+                    <div class="quantite-inputs">
+                        <input type="text" class="form-control quantite-input" placeholder="Quantité 1" required>
+                        <input type="text" class="form-control quantite-input" placeholder="Quantité 2" required>
+                        <input type="text" class="form-control quantite-input" placeholder="Quantité 3" required>
+                        <input type="text" class="form-control quantite-input" placeholder="Quantité 4" required>
+                        <input type="text" class="form-control quantite-input" placeholder="Quantité 5" required>
+
+                    </div>
+                </div>
+            </div>
+            <div id="recipe-form">
+                <!-- Ajout des instructions -->
+                <label class="para">Instructions</label>
+                <br>
+                <textarea id="para" name="para" rows="5" cols="100" required></textarea>
+            </div>
+            <button type="button" id="submitContainer" class="btn btn-primary">Ajouter la recette</button>
+        </div>
+        <div class="affichage col-md-6">
+            <h3>Recettes</h3>
+            <!-- Affichage dynamique des recettes -->
+            <div id="recipe-list">
+
+                <table class="rows">
+                    <tbody id="infoTableBody">
+                    <!-- Les lignes du tableau seront ajoutées ici-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="MainJS.js"></script>
+</body>
+
+</html>
+
