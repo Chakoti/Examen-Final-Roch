@@ -1,0 +1,41 @@
+.ajout{
+    margin-top: 150px;
+    margin-left: 100px;
+
+}
+
+
+.Input{
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    columns: auto;
+}
+
+.quantité{
+    margin-top: 32px;
+}
+
+.affichage{
+    margin-top: 150px;
+    margin-left:80px;
+
+}
+
+.rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid #ccc; /* Border style */
+
+}
+
+
+
+
+
+
+
